@@ -1,0 +1,77 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* Dark survival theme */
+    --background: 220 15% 6%;
+    --foreground: 120 40% 85%;
+
+    --card: 220 20% 8%;
+    --card-foreground: 120 40% 85%;
+
+    --popover: 220 25% 10%;
+    --popover-foreground: 120 40% 85%;
+
+    /* Tactical green primary */
+    --primary: 120 70% 45%;
+    --primary-foreground: 220 15% 6%;
+
+    /* Amber secondary for radar */
+    --secondary: 45 95% 60%;
+    --secondary-foreground: 220 15% 6%;
+
+    /* Muted dark tones */
+    --muted: 220 20% 12%;
+    --muted-foreground: 120 20% 60%;
+
+    /* Blue accent for UI elements */
+    --accent: 200 80% 50%;
+    --accent-foreground: 220 15% 6%;
+
+    /* Orange destructive for alerts */
+    --destructive: 15 85% 55%;
+    --destructive-foreground: 220 15% 6%;
+
+    /* Tactical borders and inputs */
+    --border: 120 30% 25%;
+    --input: 220 25% 15%;
+    --ring: 120 70% 45%;
+
+    --radius: 0.25rem;
+
+    /* Custom tactical variables */
+    --radar-primary: 120 70% 45%;
+    --radar-secondary: 45 95% 60%;
+    --danger: 0 85% 60%;
+    --warning: 30 95% 65%;
+    --tactical-bg: 220 25% 8%;
+    --tactical-overlay: 120 70% 45%;
+    
+    /* Gradients */
+    --gradient-tactical: linear-gradient(135deg, hsl(220 25% 8%), hsl(220 20% 12%));
+    --gradient-radar: radial-gradient(circle, hsl(120 70% 45% / 0.2), transparent 70%);
+    --gradient-danger: linear-gradient(90deg, hsl(15 85% 55%), hsl(0 85% 60%));
+    
+    /* Animations */
+    --transition-tactical: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --glow-tactical: 0 0 20px hsl(120 70% 45% / 0.3);
+    --glow-radar: 0 0 30px hsl(45 95% 60% / 0.4);
+
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
