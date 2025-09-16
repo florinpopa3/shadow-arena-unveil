@@ -19,5 +19,6 @@ export default defineConfig(({ mode }) => ({
     'process.env.NEXT_PUBLIC_RPC_URL': JSON.stringify('https://sepolia.infura.io/v3/YOUR_INFURA_KEY'),
     'process.env.NEXT_PUBLIC_WALLET_CONNECT_PROJECT_ID': JSON.stringify('YOUR_WALLET_CONNECT_ID'),
     'process.env.NEXT_PUBLIC_INFURA_API_KEY': JSON.stringify('YOUR_INFURA_KEY'),
+    'import.meta.env.VITE_CONTRACT_ADDRESS': JSON.stringify('YOUR_DEPLOYED_CONTRACT_ADDRESS'),
   },
 }));
